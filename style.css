@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto'
+
+}
+
+html {
+    font-size: 50.5%;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E0FFFF;
+}
+
+h3 {
+    font-size: 2.4rem;
+    text-align: center;
+}
+
+p, a {
+    font-size: 1.7rem;
+}
+
+.container {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    padding: 3.2rem;
+    background-color: #E9FFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:400px;
+}
+
+.rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3.2rem;
+    margin: 4.8rem 0 3.2rem 0;
+}
+
+/*.child p:first-child{}*/
+
+/*.unhappy p, .happy p, .satisfied p{}*/
+:is(.unhappy, .happy, .satisfied) h1 {
+    text-align: center;
+
+}
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+    color: rgb(61, 136, 61);
+}
+
+:is(.unhappy, .happy, .satisfied, .response-screen) p:first-child {
+    /* background-color: #fff1c9; */
+    border-radius: 1rem;
+    font-size: 5.6rem;
+    padding: 1.6rem 2.4rem;
+    cursor: pointer;
+    margin-bottom: 1.2rem;
+    transition: all .3s linear;
+
+}
+h3:hover{
+    color: rgb(61, 136, 61);
+    cursor: pointer;
+}
+
+
+:is(.unhappy, .happy, .satisfied) p:first-child:hover {
+    scale: 1.05;
+    background-color: rgb(144, 187, 144);
+}
+
+.feedback-btn {
+    width: 100%;
+    text-align: center;
+}
+
+button, a {
+    padding: 1.2rem 3.2rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: rgb(61, 136, 61);
+    color: #fff;
+    font-size: 1.8rem;
+    border-radius: .5rem;
+}
+
+button:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.active {
+    scale: 1.05;
+    color: rgb(61, 136, 61);
+    border-radius: .6rem;
+}
+
+.response-screen {
+    text-align: center;
+}
+
+.response-screen h3 {
+    margin: 1.2rem 0 3.2rem 0;
+    font-size: 1.4rem;
+}
+
+.response-screen .feedback-button {
+    margin-top: 3.2rem;
+}
